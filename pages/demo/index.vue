@@ -1,5 +1,6 @@
 <template>
   <p class="sp:w-96 sp:h-5 pc:h-11 gradient sp:text-12 pc:text-25">resize screen to smaller 1024px <ArrowDownIcon /></p>
+  <div>{{ $t('hello') }}</div>
   <ArrowTopIcon fill="pink" />
   <ArrowLeftIcon fill="pink" />
 </template>
