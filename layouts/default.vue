@@ -1,9 +1,14 @@
 <template>
-  <Header />
+  <NuxtLoadingBar :duration="1000" />
+  <CommonLayoutHeader />
   <slot />
-  <Footer />
+  <CommonLayoutFooter />
 </template>
 
-<script setup>
-import { Footer, Header } from '~~/components/common/layout'
+<script lang="ts">
+export default {
+  setup() {
+    return {}
+  },
+}
 </script>

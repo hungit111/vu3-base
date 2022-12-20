@@ -2,7 +2,6 @@ import { reactive } from 'vue'
 import { acceptHMRUpdate, defineStore } from 'pinia'
 import { useToast } from 'vue-toastification'
 import { useLocalStorage } from '@vueuse/core'
-import { DEBOUCE_DELAY } from '~~/untils/constant'
 export const useUserStore = defineStore('user', () => {
   const token = useLocalStorage('token', '')
   const toast = useToast()

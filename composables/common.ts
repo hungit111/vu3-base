@@ -1,14 +1,17 @@
 import { ref } from 'vue'
+import { debounce } from 'lodash'
 import { useI18n } from 'vue-i18n'
-import { useLoadingStore } from '~/stores'
+import { useLoadingStore } from '~~/stores'
 import { Validation } from '@vuelidate/core'
-export const DEBOUCE_DELAY = 1000
-
+import { DEBOUCE_DELAY } from '~/utils'
 export default function useCommon() {
+  // const nuxtApp = useNuxtApp();
   const loading = useLoadingStore()
   const { t } = useI18n({})
+  const test = ref(0)
+
   function isMobileResolution() {
-    return window.innerWidth <= 1024 // should update logic more
+    return window.innerWidth <= 800 // should update logic more
   }
 
   function checkMobileWeb() {
@@ -18,6 +21,11 @@ export default function useCommon() {
       return false
     }
   }
+
+  const handleSubmitDebouce = debounce(function (cb: () => void) {
+    cb()
+  }, DEBOUCE_DELAY)
+
   async function loadingIndicator(cb: () => void) {
     loading.start()
     await cb()
@@ -55,6 +63,8 @@ export default function useCommon() {
   }
 
   return {
+    test,
+    handleSubmitDebouce,
     isMobileResolution,
     checkMobileWeb,
     loadingIndicator,
