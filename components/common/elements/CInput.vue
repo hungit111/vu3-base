@@ -22,7 +22,7 @@ function clear() {
 }
 
 function input(e: Event) {
-  const target = e.target
+  const target = e.target as HTMLInputElement
   emit('update:modelValue', target?.value)
 }
 </script>
