@@ -1,0 +1,25 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+
+@layer base {
+  :root {
+    /* メイン */
+  }
+}
+
+@layer components {
+  .gradient {
+    background: linear-gradient(90deg, #0c7159 0%, #2ead61 100%);
+  }
+}
+
+svg {
+  display: inline;
+}

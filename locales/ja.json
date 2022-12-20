@@ -1,0 +1,20 @@
+{
+  "hello": "やあ {name} !",
+  "hello2": "やあ {name} !",
+  "components": {
+    "a": "a",
+    "elements": {
+      "labels": {
+        "new": {
+          "notification": "お知らせ",
+          "base": "拠点",
+          "campaign": "キャンペーン",
+          "emergency": "緊急"
+        },
+        "field": {
+          "require": "必須"
+        }
+      }
+    }
+  }
+}
