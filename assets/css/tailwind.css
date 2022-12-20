@@ -2,19 +2,47 @@
 @tailwind components;
 @tailwind utilities; */
 
-@import 'tailwindcss/base';
+@import "tailwindcss/base";
 
-@import 'tailwindcss/components';
+@import "tailwindcss/components";
 
-@import 'tailwindcss/utilities';
+@import "tailwindcss/utilities";
 
 @layer base {
   :root {
-    /* メイン */
-  }
+      --color-text-primary: #0c7159;
+      --color-text-secondary: #5eaa43;
+      --color-text-tetiary: #a9870f;
+      --color-text-disable: #b6b6b6;
+      --color-text-error: red;
+
+      --color-background-primary: white;
+      --color-background-secondary: white;
+      --color-background-tetiary: #a9870f;
+      --color-background-disable: #b6b6b6;
+      --color-background-error: red;
+
+      --color-border-primary: #0c7159;
+      --color-border-secondary: #5eaa43;
+      --color-border-tetiary: #a9870f;
+      --color-border-disable: #b6b6b6;
+      --color-border-error: red;
+    }
 }
 
 @layer components {
+   .input {
+        @apply border-skin-primary border w-full m-1
+    }
+    .input-errors {
+      @apply border-skin-error
+    }
+    .btn {
+        @apply rounded border-skin-primary border m-1 px-2 py-1 hover:bg-skin-primary hover:text-skin-primary
+    }
+    .error-msg {
+        @apply text-skin-error
+    }
   .gradient {
     background: linear-gradient(90deg, #0c7159 0%, #2ead61 100%);
   }
