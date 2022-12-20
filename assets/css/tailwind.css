@@ -10,7 +10,7 @@
 
 @layer base {
   :root {
-      --color-text-primary: #0c7159;
+      --color-text-primary: #5eaa43;
       --color-text-secondary: #5eaa43;
       --color-text-tetiary: #a9870f;
       --color-text-disable: #b6b6b6;
@@ -22,7 +22,7 @@
       --color-background-disable: #b6b6b6;
       --color-background-error: red;
 
-      --color-border-primary: #0c7159;
+      --color-border-primary: #5eaa43;
       --color-border-secondary: #5eaa43;
       --color-border-tetiary: #a9870f;
       --color-border-disable: #b6b6b6;
@@ -31,8 +31,17 @@
 }
 
 @layer components {
-   .input {
-        @apply border-skin-primary border w-full m-1
+    .input-group {
+      @apply m-1  border-skin-primary border w-fit flex rounded;
+    }
+    .input-group__input {
+      @apply p-1 focus-visible:outline-none
+    }
+    .input-group__prefix {
+      @apply border-skin-primary border-r p-1
+    }
+    .input-group__subfix {
+      @apply border-skin-primary border-l p-1
     }
     .input-errors {
       @apply border-skin-error

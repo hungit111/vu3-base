@@ -1,8 +1,8 @@
 <template>
   <NuxtLoadingBar :duration="1000" />
-  <Header />
+  <CommonLayoutHeader />
   <slot />
-  <Footer />
+  <CommonLayoutFooter />
 </template>
 
 <script lang="ts">

@@ -1,39 +1,28 @@
 <!-- CTextBox -->
 <template>
-  <input v-model="dataValue" />
+  <div class="input-group">
+    <slot name="prefix">
+      <span class="input-group__prefix">@</span>
+    </slot>
+    <input class="input-group__input" :value="modelValue" @input="input" />
+    <slot name="subfix"><span class="input-group__subfix" @click="clear"> clear</span> </slot>
+  </div>
 </template>
-<script lang="ts">
-import { Props } from 'nuxt/dist/head/runtime/types'
-
-const CInput = {
-  props: {
-    value: {
-      type: String,
-      default: 'button label',
-    },
+<script lang="ts" setup>
+const emit = defineEmits(['update:modelValue'])
+defineProps({
+  modelValue: {
+    type: String,
+    default: 'button label',
   },
-  setup(props: Props) {
-    // const state = reactive({
-    //   site: '',
-    // })
-    // const emit = defineEmits(['update:dataValue'])
+})
 
-    const dataValue = computed({
-      get() {
-        return props.value
-      },
-      set(value) {
-        console.log(value)
-
-        // emit('update:dataValue', value)
-      },
-    })
-
-    return {
-      dataValue,
-      // emit,
-    }
-  },
+function clear() {
+  emit('update:modelValue', '')
 }
-export default CInput
+
+function input(e: Event) {
+  const target = e.target
+  emit('update:modelValue', target?.value)
+}
 </script>

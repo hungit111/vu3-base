@@ -6,28 +6,37 @@ module.exports = {
       textColor: {
         skin: {
           primary: 'var(--color-text-primary)',
-          secondary: 'var(color-text-secondary)',
-          tetiary: 'var(color-text-tetiary)',
-          disable: 'var(color-text-disable)',
-          error: 'var(color-text-error)',
+          secondary: 'var(--color-text-secondary)',
+          tetiary: 'var(--color-text-tetiary)',
+          disable: 'var(--color-text-disable)',
+          error: 'var(--color-text-error)',
         },
       },
       backgroundColor: {
         skin: {
           primary: 'var(--color-background-primary)',
-          secondary: 'var(color-background-secondary)',
-          tetiary: 'var(color-background-tetiary)',
-          disable: 'var(color-background-disable)',
-          error: 'var(color-background-error)',
+          secondary: 'var(--color-background-secondary)',
+          tetiary: 'var(--color-background-tetiary)',
+          disable: 'var(--color-background-disable)',
+          error: 'var(--color-background-error)',
         },
       },
       borderColor: {
         skin: {
           primary: 'var(--color-border-primary)',
-          secondary: 'var(color-border-secondary)',
-          tetiary: 'var(color-border-tetiary)',
-          disable: 'var(color-border-disable)',
-          error: 'var(color-border-error)',
+          secondary: 'var(--color-border-secondary)',
+          tetiary: 'var(--color-border-tetiary)',
+          disable: 'var(--color-border-disable)',
+          error: 'var(--color-border-error)',
+        },
+      },
+      outlineColor: {
+        skin: {
+          primary: 'var(--color-border-primary)',
+          secondary: 'var(--color-border-secondary)',
+          tetiary: 'var(--color-border-tetiary)',
+          disable: 'var(--color-border-disable)',
+          error: 'var(--color-border-error)',
         },
       },
       gradientColorStops: {
