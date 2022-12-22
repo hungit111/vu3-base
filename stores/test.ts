@@ -1,3 +1,5 @@
+//https://prazdevs.github.io/pinia-plugin-persistedstate/frameworks/nuxt-3.html
+
 import { reactive } from 'vue'
 import { acceptHMRUpdate, defineStore } from 'pinia'
 export const useTestStore = defineStore(
