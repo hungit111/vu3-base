@@ -8,7 +8,7 @@
   <button @click="onClickBtn">click me</button>
 </template>
 <script lang="ts" setup>
-import { useTestStore } from '~~/stores/test'
+import { useTestStore } from '~~/stores'
 import { storeToRefs } from 'pinia'
 definePageMeta({
   layout: 'default',
