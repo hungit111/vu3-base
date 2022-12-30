@@ -20,7 +20,7 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@use "@/assets/scss/_variable.scss" as *;',
+          // additionalData: '@use "@/assets/scss/foundation/_variable.scss" as *;',
         },
       },
     },
@@ -35,7 +35,7 @@ export default defineNuxtConfig({
     //   })
     // },
   },
-  css: ['@/assets/css/tailwind.css'],
+  css: ['@/assets/css/tailwind.css', '@/assets/scss/index.scss'],
   postcss: {
     plugins: {
       tailwindcss: {},

@@ -1,4 +1,5 @@
 {
+    "tailwindCSS.rootFontSize": 10, // <- your root font size here
     "i18n-ally.localesPaths": [
         "locales"
     ]
