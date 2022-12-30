@@ -31,21 +31,7 @@
 }
 
 @layer components {
-    .input-group {
-      @apply m-1  border-skin-primary border w-fit flex rounded;
-    }
-    .input-group__input {
-      @apply p-1 focus-visible:outline-none
-    }
-    .input-group__prefix {
-      @apply border-skin-primary border-r p-1
-    }
-    .input-group__subfix {
-      @apply border-skin-primary border-l p-1
-    }
-    .input-errors {
-      @apply border-skin-error
-    }
+    
     .btn {
         @apply rounded border-skin-primary border m-1 px-2 py-1 hover:bg-skin-primary hover:text-skin-primary
     }

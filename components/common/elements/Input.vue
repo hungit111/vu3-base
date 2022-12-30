@@ -26,3 +26,21 @@ function input(e: Event) {
   emit('update:modelValue', target?.value)
 }
 </script>
+<style lang="scss" scoped>
+.input-group {
+  @apply m-1  border w-fit flex rounded hover:cursor-pointer hover:outline hover:outline-skin-primary hover:outline-1;
+
+  &__input {
+    @apply p-1 focus-visible:outline-none;
+  }
+  &__prefix {
+    @apply border-r p-1;
+  }
+  &__subfix {
+    @apply border-l p-1;
+  }
+}
+.input-errors {
+  @apply border-skin-error;
+}
+</style>
