@@ -10,23 +10,23 @@
 
 @layer base {
   :root {
-      --color-text-primary: #5eaa43;
-      --color-text-secondary: #5eaa43;
+      --color-text-primary: #5b3cc4;
+      --color-text-secondary: #9bfa95;
       --color-text-tetiary: #a9870f;
       --color-text-disable: #b6b6b6;
-      --color-text-error: red;
+      --color-text-error: #ff4757;
 
       --color-background-primary: white;
       --color-background-secondary: white;
       --color-background-tetiary: #a9870f;
       --color-background-disable: #b6b6b6;
-      --color-background-error: red;
+      --color-background-error: #ff4757;
 
-      --color-border-primary: #5eaa43;
-      --color-border-secondary: #5eaa43;
+      --color-border-primary: #5b3cc4;
+      --color-border-secondary: #9bfa95;
       --color-border-tetiary: #a9870f;
       --color-border-disable: #b6b6b6;
-      --color-border-error: red;
+      --color-border-error: #ff4757;
     }
 }
 

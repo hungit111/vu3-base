@@ -44,6 +44,15 @@ module.exports = {
           hue: 'var(--color-background-primary)',
         },
       },
+      keyframes: {
+        fadeout: {
+          '0%': { opacity: '0', display: 'none' },
+          '100%': { opacity: '1', display: 'block' },
+        },
+      },
+      animation: {
+        fadeout: 'fadeout 1s',
+      },
     },
     //使用ウェイト
     fontWeight: {

@@ -1,6 +1,7 @@
 <template>
   <NuxtLoadingBar :duration="1000" />
   <CommonLayoutHeader />
+  <CommonLayoutSideBar />
   <slot />
   <CommonLayoutFooter />
 </template>
