@@ -3,7 +3,7 @@
     <p class="text-3xl text-red-600">STATION WORK TOP</p>
   </div>
   <div>
-    <CommonElementsCInput v-model="testState.test" @click="click" />
+    <CommonElementsInput v-model="testState.test" @click="click" />
   </div>
   <button @click="onClickBtn">click me</button>
 </template>

@@ -13,7 +13,7 @@
       <div class="items-center">
         <ul class="navbar-nav mr-auto flex flex-row">
           <li class="nav-item">
-            <a class="nav-link block pr-2 lg:px-2 py-2 text-skin-primary hover:text-skin-secondary focus:text-skin-secondary transition duration-150 ease-in-out" href="#!">Regular link</a>
+            <a class="nav-link block pr-2 lg:px-2 py-2 text-skin-primary hover:text-skin-secondary focus:text-skin-secondary transition duration-150 ease-in-out" href="#!">Menu</a>
           </li>
         </ul>
       </div>
