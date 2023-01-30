@@ -4,7 +4,7 @@ import { useI18n } from 'vue-i18n'
 import { useLoadingStore } from '~~/stores'
 import { Validation } from '@vuelidate/core'
 import { DEBOUCE_DELAY } from '~/utils'
-export const useCommon = function () {
+export default function useCommonF() {
   // const nuxtApp = useNuxtApp();
   const loading = useLoadingStore()
   const { t } = useI18n({})
