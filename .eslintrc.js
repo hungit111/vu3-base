@@ -4,7 +4,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ['plugin:@typescript-eslint/recommended', 'plugin:nuxt/recommended', 'plugin:vue/vue3-recommended','plugin:sonarjs/recommended'],
+  extends: ['plugin:@typescript-eslint/recommended', 'plugin:nuxt/recommended', 'plugin:vue/vue3-recommended', 'plugin:sonarjs/recommended'],
   parserOptions: {
     ecmaVersion: 'latest',
     parser: '@typescript-eslint/parser',
@@ -25,5 +25,6 @@ module.exports = {
     'vue/no-multiple-template-root': 'off',
     'vue/html-indent': 'off',
     'vue/component-definition-name-casing': ['error', 'PascalCase'],
+    'sonarjs/prefer-single-boolean-return': 'off',
   },
 }

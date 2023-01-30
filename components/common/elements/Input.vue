@@ -8,7 +8,9 @@
     <slot name="subfix"><span class="input-group__subfix" @click="clear"> clear</span> </slot>
   </div>
 </template>
+
 <script lang="ts" setup>
+const UPDATE_MODAL_VALUE = 'update:modelValue'
 const emit = defineEmits(['update:modelValue'])
 defineProps({
   modelValue: {
@@ -18,12 +20,12 @@ defineProps({
 })
 
 function clear() {
-  emit('update:modelValue', '')
+  emit(UPDATE_MODAL_VALUE, '')
 }
 
 function input(e: Event) {
   const target = e.target as HTMLInputElement
-  emit('update:modelValue', target?.value)
+  emit(UPDATE_MODAL_VALUE, target?.value)
 }
 </script>
 <style lang="scss" scoped>
